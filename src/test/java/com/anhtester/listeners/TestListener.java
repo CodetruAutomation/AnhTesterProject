@@ -42,11 +42,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     private ScreenRecorderHelpers screenRecorder;
 
     public TestListener() {
-        try {
-            screenRecorder = new ScreenRecorderHelpers();
-        } catch (IOException | AWTException e) {
-            System.out.println(e.getMessage());
-        }
+      
     }
 
     public String getTestName(ITestResult result) {
